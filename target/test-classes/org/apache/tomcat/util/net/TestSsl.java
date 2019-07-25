@@ -157,8 +157,8 @@ public class TestSsl extends TomcatBaseTest {
     public void testRenegotiateWorks() throws Exception {
         Tomcat tomcat = getTomcatInstance();
 
-        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
-                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
+//        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
+//                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
 
         File appDir = new File(getBuildDirectory(), "webapps/examples");
         // app dir is relative to server home

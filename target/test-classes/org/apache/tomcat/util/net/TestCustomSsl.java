@@ -51,8 +51,8 @@ public class TestCustomSsl extends TomcatBaseTest {
         Tomcat tomcat = getTomcatInstance();
         Connector connector = tomcat.getConnector();
 
-        Assume.assumeFalse("This test is only for JSSE based SSL connectors",
-                connector.getProtocolHandlerClassName().contains("Apr"));
+//        Assume.assumeFalse("This test is only for JSSE based SSL connectors",
+//                connector.getProtocolHandlerClassName().contains("Apr"));
 
         connector.setProperty("sslImplementationName",
                 "org.apache.tomcat.util.net.jsse.TesterBug50640SslImpl");
@@ -99,8 +99,8 @@ public class TestCustomSsl extends TomcatBaseTest {
 
         Tomcat tomcat = getTomcatInstance();
 
-        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
-                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
+//        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
+//                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
 
         TesterSupport.configureClientCertContext(tomcat);
 

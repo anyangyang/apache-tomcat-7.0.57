@@ -46,8 +46,8 @@ public class TestClientCert extends TomcatBaseTest {
     }
 
     private void doTestClientCertGet(boolean preemtive) throws Exception {
-        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
-                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
+//        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
+//                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
 
         if (preemtive) {
             Tomcat tomcat = getTomcatInstance();
@@ -96,8 +96,8 @@ public class TestClientCert extends TomcatBaseTest {
 
     private void doTestClientCertPost(int bodySize, boolean expectProtectedFail)
             throws Exception {
-        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
-                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
+//        Assume.assumeTrue("SSL renegotiation has to be supported for this test",
+//                TesterSupport.isRenegotiationSupported(getTomcatInstance()));
 
         getTomcatInstance().start();
 

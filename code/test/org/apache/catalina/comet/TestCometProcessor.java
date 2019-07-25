@@ -51,9 +51,9 @@ public class TestCometProcessor extends TomcatBaseTest {
 
     @Test
     public void testAsyncClose() throws Exception {
-        Assume.assumeTrue(
-                "This test is skipped, because this connector does not support Comet.",
-                isCometSupported());
+//        Assume.assumeTrue(
+//                "This test is skipped, because this connector does not support Comet.",
+//                isCometSupported());
 
         // Setup Tomcat instance
         Tomcat tomcat = getTomcatInstance();
@@ -118,9 +118,9 @@ public class TestCometProcessor extends TomcatBaseTest {
 
     @Test
     public void testSyncClose() throws Exception {
-        Assume.assumeTrue(
-                "This test is skipped, because this connector does not support Comet.",
-                isCometSupported());
+//        Assume.assumeTrue(
+//                "This test is skipped, because this connector does not support Comet.",
+//                isCometSupported());
 
         // Setup Tomcat instance
         Tomcat tomcat = getTomcatInstance();
@@ -189,9 +189,9 @@ public class TestCometProcessor extends TomcatBaseTest {
 
     @Test
     public void testConnectionClose() throws Exception {
-        Assume.assumeTrue(
-                "This test is skipped, because this connector does not support Comet.",
-                isCometSupported());
+//        Assume.assumeTrue(
+//                "This test is skipped, because this connector does not support Comet.",
+//                isCometSupported());
 
         // Setup Tomcat instance
         Tomcat tomcat = getTomcatInstance();
@@ -262,9 +262,9 @@ public class TestCometProcessor extends TomcatBaseTest {
     }
 
     private void doSimpleCometTest(String initParam) throws Exception {
-        Assume.assumeTrue(
-                "This test is skipped, because this connector does not support Comet.",
-                isCometSupported());
+//        Assume.assumeTrue(
+//                "This test is skipped, because this connector does not support Comet.",
+//                isCometSupported());
 
         // Setup Tomcat instance
         Tomcat tomcat = getTomcatInstance();
@@ -356,9 +356,9 @@ public class TestCometProcessor extends TomcatBaseTest {
      */
     @Test
     public void testCometConnectorStop() throws Exception {
-        Assume.assumeTrue(
-                "This test is skipped, because this connector does not support Comet.",
-                isCometSupported());
+//        Assume.assumeTrue(
+//                "This test is skipped, because this connector does not support Comet.",
+//                isCometSupported());
 
         // Setup Tomcat instance
         SimpleCometServlet servlet = new SimpleCometServlet();

@@ -88,7 +88,7 @@ public class Catalina {
     /**
      * Pathname to the server configuration file.
      */
-    protected String configFile = "conf/server.xml";
+    protected String configFile = "code/conf/server.xml";
 
     // XXX Should be moved to embedded
     /**

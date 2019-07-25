@@ -270,6 +270,7 @@ public final class Bootstrap {
 
     /**
      * Load daemon.
+     * 调用 catlina 实例的 load 方法
      */
     private void load(String[] arguments)
         throws Exception {

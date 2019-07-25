@@ -391,9 +391,9 @@ public class TestWsWebSocketContainer extends TomcatBaseTest {
             throws Exception {
 
         // This will never work for BIO
-        Assume.assumeFalse(
-                "Skipping test. This feature will never work for BIO connector.",
-                getProtocol().equals(Http11Protocol.class.getName()));
+//        Assume.assumeFalse(
+//                "Skipping test. This feature will never work for BIO connector.",
+//                getProtocol().equals(Http11Protocol.class.getName()));
 
         /*
          * Note: There are all sorts of horrible uses of statics in this test

@@ -102,7 +102,7 @@ public class CatalinaProperties {
         if (is == null) {
             try {
                 File home = new File(getCatalinaBase());
-                File conf = new File(home, "conf");
+                File conf = new File(home, "code/conf");
                 File propsFile = new File(conf, "catalina.properties");
                 is = new FileInputStream(propsFile);
             } catch (Throwable t) {
